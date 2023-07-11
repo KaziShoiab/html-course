@@ -1,0 +1,47 @@
+.tooltip {
+    display: inline-block;
+    border: 1px solid red;
+    color: black;
+    position: relative;
+}
+.tooltiptext {
+    visibility: hidden;
+    width: 100%;
+    background-color: white;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+position: absolute;
+    z-index: 1;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+p, h1, h2{
+    color: blue;
+}
+
+
+.gallery{
+    margin: 5px;
+    float: left;
+    width: 180px;
+}
+.gallery:hover{
+    border: 1px solid red;
+    background-color: green;
+    color: white;
+    font-weight: 700;
+
+}
+
+
+.gallery img{
+    width: 180px;
+}
+.desc{
+    padding: 15px;
+    text-align: center;
+}

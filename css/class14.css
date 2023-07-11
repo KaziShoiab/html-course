@@ -1,0 +1,19 @@
+img{
+visibility: hidden;
+   
+}
+table, tr, td{
+    border:1px solid red;
+}
+/* media query 500 px 
+max width = img {
+    display one
+} */
+/* 1920 width : (dont apply display none property to image)
+768 width : {display:none} */
+li{
+    display: inline;
+}
+span{
+    display: block;
+}

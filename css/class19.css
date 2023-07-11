@@ -1,0 +1,49 @@
+.para1{
+    background-color: blue;
+}
+#para2{
+    background-color: green;
+}
+p{
+    border: 2px solid red;
+    border-radius: 25px;
+}
+.pagination{
+    color: black;
+    padding: 30px;
+}
+.column{
+    column-count: 4;
+    column-gap: 100px;
+    border: 2px solid red;
+    column-rule: 2px solid red;
+}
+.flexible{
+    display: flex;
+    background-color: aqua;
+}
+.flexible div{
+    padding: 30px;
+    background-color: blue;
+    color: white;
+    margin: 12px;
+}
+.flexright{
+    background-color: red;
+    padding: 10px;
+    flex: 50%;
+}
+.flextleft{
+    background-color: dodgerblue;
+    padding: 10px;
+    flex: 50%;
+}
+.flex{
+    
+    display: flex;
+}
+@media (max-width: 800px){
+   .flex{
+flex-direction: column;
+}
+}

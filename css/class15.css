@@ -1,0 +1,58 @@
+.clip   {
+    width: 300px;
+    border: 2px solid red;
+    overflow: hidden;
+    text-overflow: clip;
+    white-space: nowrap;
+   
+}
+.elipse{
+    width: 200px;
+    border: 2px solid red;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.scroll{
+    width: 200px;
+    border: 8px solid green;
+    overflow: scroll;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.user{
+    width: 200px;
+    border: 3px solid red;
+    overflow: scroll;
+    white-space: nowrap;
+}
+.visible{
+    width: 200px;
+    border: 3px solid red;
+    overflow: visible;
+    white-space: nowrap;
+}
+.wordwrap{
+    width: 200px;
+    border: 1px solid red;
+    word-wrap: break-word;
+}
+div{
+    width: 300px;
+   border: 1px solid red;
+   height: 400px;
+
+   transform: translate(100px,200px);
+}
+.rotate{
+    width: 200px ;
+    border: 2px solid red;
+    background-color: aquamarine;
+    transform: rotate(20deg);
+}
+.specific{
+    width: 200px;
+    border: 2px solid red;
+    background-color: green;
+    transform: rotateY(-50deg);
+}

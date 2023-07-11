@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javascript 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto+Condensed:ital,wght@0,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>css change using javascript</h1>
+    <p id="demo">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit,
+      explicabo!
+    </p>
+    <button
+      type="button"
+      onclick="document.getElementById('demo').style.fontFamily='Montserrat'"
+    >
+      click me
+    </button>
+
+    <p id="demostyle">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque,
+      consectetur!
+    </p>
+    <button
+      type="button"
+      onclick="document.getElementById('demostyle').style.backgroundColor='red'"
+    >
+      click on me to change style
+    </button>
+
+    <h1>on click hide using javascript</h1>
+
+    <h2 id="hideme">click below button to hide me</h2>
+    <button
+      type="button"
+      onclick="document.getElementById('hideme').style.display='none'"
+    >
+      click me
+    </button>
+    <button
+      type="button"
+      onclick="document.getElementById('hideme').style.display=''"
+    >
+      click me to show content
+    </button>
+
+    <h1>.inner html revision</h1>
+    <p id="inner"></p>
+    <button
+      type="button"
+      onclick="document.getElementById('inner').innerHTML=Date()"
+    >
+      click me to see date
+    </button>
+    <h1>example 2 of inner html</h1>
+    <p id="content">demo content</p>
+    <button
+      type="button"
+      onclick="document.getElementById('content').innerHTML='original content'"
+    >
+      click to see real content
+    </button>
+
+    <h1>how to change style using javascript</h1>
+    <p id="colorid">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, rerum.
+    </p>
+    <button
+      type="button"
+      onclick="document.getElementById('colorid').style.color='red'"
+    >
+      click to change color
+    </button>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+body {
+   background-image: url("/images/20190316102058_2019-Yamaha-MT-15-front.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+  }
+    /* background-color
+    background-image
+    background repeat, no repeat, repeat x, repeat y
+    background size = 100%
+    background size cover
+    background postion top
+    background postition bottom 
+    background position center 
+    background postition left
+    background position right
+    background attachment fixed
+    background attachment scroll  */
+h1{
+  
+    border: 2px solid red;
+    border-radius: 20px;
+}

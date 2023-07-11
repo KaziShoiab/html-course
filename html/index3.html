@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>function</title>
+    <script>
+      function myfunction() {
+        document.getElementById("demo").innerHTML = "changed paragraph";
+      }
+
+      function colorchange() {
+        document.getElementById("color").style.color = "red";
+      }
+    </script>
+    <script src="/javascript/index3.js"></script>
+  </head>
+
+  <body>
+    <h1>javascript functions</h1>
+    <p>
+      javascript function is a block of code, that can be called or revoke
+      multiple times on a web page or webiste.
+    </p>
+
+    <p id="demo">demo paragraph</p>
+    <button type="button" onclick="myfunction()">click me</button>
+
+    <p id="document">demo1 paragraph</p>
+    <button
+      type="button"
+      onclick="document.getElementById('document').innerHTML='document changed'"
+    >
+      click me
+    </button>
+
+    <p id="demo">function 3</p>
+    <button type="button" onclick="myfunction()">click me</button>
+
+    <p id="color">this is colorful text</p>
+    <button type="button" onclick="colorchange()">click to change color</button>
+
+    <h1 id="backg">background color will be changed on click below button</h1>
+    <button type="button" onclick="newfun()">click me</button>
+
+    <h3 id="content">this is demo content</h3>
+    <button type="button" onclick="changecon()">click me</button>
+
+    <p id="hidecon">contetn</p>
+    <button type="button" onclick="hide()">hide me</button>
+    <button type="button" onclick="show()">show</button>
+
+    <p id="currentdate"></p>
+    <button type="button" onclick="timing()">show date</button>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+@media only screen and (max-width: 768px){
+   .color{
+      color: blue;
+      background-color: red;
+   }
+ 
+
+/* minimum = the value cannot be lesser than given value 1200=+ 1199(default styling)
+maximum = the value cannot be greater than given value 1200=- 1201(default) */
+
+/*++++++++++= down
+min = up */

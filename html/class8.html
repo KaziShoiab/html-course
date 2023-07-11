@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>html forms</title>
+    <link rel="stylesheet" href="/css/class8.css" />
+  </head>
+  <body>
+    <form action="/html/action.html">
+      <!-- user have his value (we are taking his name as input using input type text) -->
+      <!-- input type text -->
+      <label for="fname">First Name</label><br />
+      <input type="text" id="name" name="name" /><br />
+      <label for="sname">Second Name</label><br />
+      <input type="text" id="sname" name="name" /><br />
+
+      <!-- input type radio buttons -->
+      <!-- database have already value that is male, female, others and we are just taking selection from the user -->
+
+      <label for="Gender">Select Your Gender</label><br />
+      <input type="radio" id="male" name="gender1" value="male" />
+      <label for="male">male</label><br />
+
+      <input type="radio" id="female" name="gender1" value="female" />
+      <label for="female">female</label><br />
+
+      <input type="radio" id="others" name="gender1" value="others" />
+      <label for="others">others</label><br />
+
+      <label for="colors">select your favourite color</label><br />
+      <input type="radio" id="red" name="favcolor" value="red" /><label
+        for="red"
+        >red</label
+      >
+      <input type="radio" id="blue" name="favcolor" value="blue" /><label
+        for="blue"
+        >blue</label
+      >
+
+      <label for="colors">Enter Your Favourite color</label><br />
+      <input type="submit" />
+
+      <!-- create a form for ticket reservation
+        Name
+        Aadhar
+        Age 
+        Gender 
+        City
+        Birth -->
+    </form>
+  </body>
+</html>
