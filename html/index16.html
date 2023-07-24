@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript 16</title>
+  </head>
+  <body>
+    <p>This Car is very expensive</p>
+    <!-- 0123456789101112131415161718192021222324 -->
+    <p id="demo1"></p>
+  </body>
+  <script>
+    // indexof() = which start from the beggining
+    let text1 = "This Car is 'very' expensive";
+    let index1 = text1.indexOf("very");
+    document.getElementById("demo1").innerHTML = index1;
+
+    let text = "Please locate where 'locate' occurs!";
+    let index = text.indexOf("locate");
+    console.log(index);
+
+    let fruit = "this is 'banana' ";
+    let index2 = fruit.indexOf("banana");
+    console.log(index2);
+
+    let car = "this is mercedes";
+    let index3 = car.indexOf("mercedes");
+    console.log(index3);
+
+    let animal = "this is dog";
+    (" 012345678910");
+    let index4 = animal.indexOf("g");
+    console.log(index4);
+
+    //     JavaScript counts positions from zero.
+
+    // 0 is the first position in a string, 1 is the second, 2 is the third, .
+
+    // lastIndexOf() = start from the ending
+
+    let furniture = "This is nice      wooden chair";
+
+    let index5 = furniture.indexOf("h");
+    console.log(index5);
+
+    // last index
+    let index6 = furniture.lastIndexOf("h");
+    console.log(index6);
+
+    let word = "Miracle";
+    let index7 = word.indexOf("i");
+    console.log(index7);
+
+    let index8 = word.lastIndexOf("i");
+    console.log(index8);
+
+    // starting index = which is returing index no 7 for "locate"
+    let word1 = "Please locate where 'locate' occurs!";
+    let index9 = word1.indexOf("locate");
+    console.log(index9);
+
+    // last index = which is returing index no 21 for "locate";
+
+    let index10 = word1.lastIndexOf("locate");
+    console.log(index10);
+
+    // search method of javscript indexing (searching methods)
+
+    let weather = "Here it is raining";
+    //search method
+    let index11 = weather.search("is");
+    // index method
+    let index12 = weather.indexOf("it");
+    console.log(index11);
+    console.log(index12);
+  </script>
+</html>

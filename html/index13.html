@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javascript 13</title>
+  </head>
+  <body>
+    <p id="demo">this is microsoft and microsoft</p>
+    <button type="button" onclick="changetext()">click</button>
+    <!--    replacing the word "microsoft" -->
+
+    <h1 id="demo1">this is amazon and amazon</h1>
+    <button type="button" onclick="flipkart()">click to see flipkart</button>
+
+    <h2 id="demo3">this is google</h2>
+    <button type="button" onclick="google()">click</button>
+
+    <p id="demo4"></p>
+
+    <p id="demo5">
+      This is Umbrella, Umbrella is very beautiful, Umbrella is red in color
+    </p>
+    <button type="button" onclick="ChangeUmb()">Change to Rose</button>
+
+    <h3 id="demo6">this is hat, hat is colorful, hat is nice</h3>
+  </body>
+
+  <script>
+    let hat = document.getElementById("demo6").innerHTML;
+    document.getElementById("demo6").innerHTML = hat.replaceAll("hat", "bat");
+    function ChangeUmb() {
+      let Umb = document.getElementById("demo5").innerHTML;
+      document.getElementById("demo5").innerHTML = Umb.replaceAll(
+        "Umbrella",
+        "Rose"
+      );
+    }
+    function changetext() {
+      let text = document.getElementById("demo").innerHTML; // dynamically stored
+      document.getElementById("demo").innerHTML = text.replace(
+        "microsoft",
+        "samsung"
+      );
+    }
+
+    function flipkart() {
+      let flipkart = document.getElementById("demo1").innerHTML;
+      document.getElementById("demo1").innerHTML = flipkart.replace(
+        "amazon",
+        "flipkart"
+      );
+    }
+
+    function google() {
+      let google = document.getElementById("demo3").innerHTML;
+      document.getElementById("demo3").innerHTML = google.replace(
+        "this is google",
+        "yahoo this is"
+      );
+    }
+
+    let text =
+      "I love cats. Cats are very easy to love. Cats are very popular.";
+    text = text.replaceAll("cats", "dogs");
+    text = text.replaceAll("Cats", "Dogs");
+    document.getElementById("demo").innerHTML = text;
+  </script>
+</html>

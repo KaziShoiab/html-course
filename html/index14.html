@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javascript 14</title>
+  </head>
+  <body>
+    <h1 id="demo">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias
+      numquam dolorem earum fuga libero ratione eum, beatae nulla nemo eos culpa
+      adipisci cupiditate unde aperiam deleniti accusantium? Eum architecto
+      voluptates laboriosam quas earum. Delectus qui perferendis eligendi
+      officiis porro itaque aperiam consequatur asperiores magni officia aut
+      laudantium et ipsa enim, sequi culpa soluta in numquam. Praesentium,
+      quidem similique perspiciatis sit veritatis libero non error totam
+      blanditiis sunt, quod ipsa esse consequuntur aut suscipit fugit
+      doloremque. Cum ipsam dolorum neque quae quia. Reiciendis neque aliquam
+      dolorem. Nemo sapiente ducimus accusamus quae nisi deserunt unde? Ipsam
+      vero at perspiciatis repellat accusantium molestias.
+    </h1>
+    <button type="button" onclick="uppercase1()">Upper Case</button>
+    <button type="button" onclick="smallcase1()">Small Case</button>
+
+    <p id="demo"></p>
+  </body>
+  <script>
+    //to uppercase
+    function uppercase1() {
+      let text = document.getElementById("demo").innerHTML;
+      document.getElementById("demo").innerHTML = text.toUpperCase();
+    }
+    //tolowercase
+    function smallcase1() {
+      let text1 = document.getElementById("demo").innerHTML;
+      document.getElementById("demo").innerHTML = text1.toLowerCase();
+    }
+
+    //concat
+    let text1 = "Hello";
+    let text2 = "World";
+    console.log(text1);
+    console.log(text2);
+    // traditional method of concat
+    console.log(text1 + " " + text2);
+
+    // concat()
+
+    let text3 = text1.concat(" " + text2);
+    console.log(text3);
+
+    let fruit1 = "mango";
+    let fruit2 = "banana";
+    console.log(fruit1);
+    console.log(fruit2);
+
+    console.log(fruit1 + " " + fruit2);
+
+    let fruit3 = fruit1.concat(" " + fruit2);
+    console.log(fruit3);
+
+    // trim
+    let t1 = "   Hello World   ";
+    console.log(t1.length);
+    let t2 = t1.trim();
+    console.log(t2.length);
+
+    let p1 = "   Hi ";
+    console.log(p1.length);
+    let p2 = p1.trim();
+    console.log(p2.length);
+    // trim start
+    let s1 = "   start   ";
+    console.log(s1.length);
+    let s2 = s1.trimStart();
+    console.log(s2.length);
+    // trim end
+    let l1 = "  end   ";
+    console.log(l1.length);
+    let l2 = l1.trimEnd();
+    console.log(l2.length);
+  </script>
+</html>
