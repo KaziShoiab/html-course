@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javascript 17</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+  </body>
+  <script>
+    let fruits = ["apple", "banana", "mango"];
+    console.log(fruits);
+
+    //match method (searching method)
+    let cars = "This is my new bad Lamborgini";
+    let index = cars.match("new");
+    console.log(index); // array result
+
+    let bike = "this is new R15";
+    let index1 = bike.match("R15");
+    document.getElementById("demo").innerHTML = index1; // just matched value
+
+    let cycle = "this is Atlas";
+    let index2 = cycle.match(/Atlas/);
+    console.log(index2);
+
+    let weather = "outside is heavy rain";
+    let hyderabad = "it is raining outside";
+    let delhi = "it is sunny day";
+
+    let index3 = weather.match(/rain/g);
+    console.log(index3);
+    // let index4 = hyderabad.match(/is/g);
+    // console.log(index4);
+    let things = "chair";
+    function home() {
+      let things = "table chair window";
+      console.log(things);
+    }
+
+    let index6 = things.match(/chair/g);
+    console.log(index6);
+
+    console.log(cars);
+
+    let windows = "this is of wooden Wooden WOODEN";
+    let index13 = windows.match(/wooden/gi);
+    console.log(index13);
+
+    let pet = "cat cat CAT CAT CAT Cat Cat Cat Cat";
+    const index14 = pet.matchAll("cat");
+    console.log(index14);
+    console.log(Array.from(index14));
+
+    const index15 = pet.matchAll("CAT");
+    console.log(Array.from(index15));
+
+    let index16 = pet.matchAll("Cat");
+    console.log(Array.from(index16));
+  </script>
+</html>
