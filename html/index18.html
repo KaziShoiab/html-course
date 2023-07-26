@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javascript 18</title>
+  </head>
+  <body></body>
+  <script>
+    let a = 3;
+    let b = 5;
+    console.log(a < b);
+    // true and false , these values are called as boolean values
+    // match method
+    let text = "this is world";
+    let index = text.match("world");
+    console.log(index);
+
+    let text1 = "this is world";
+    let index1 = text1.includes("world");
+    console.log(index1); // world is available in the above sentence = it returns true value
+
+    // include method
+    let text2 = "this is nice pencil";
+    let index2 = text2.includes("pen1");
+    console.log(index2); //pen one is not available it return false value
+
+    let text3 = "is table";
+    let index3 = text3.includes("chair", 2);
+    console.log(index3);
+
+    let text4 = "this is fan";
+    let index4 = text4.includes("fan", 15);
+    console.log(index4);
+
+    // startwith method()
+
+    let text5 = "Hello World, This is Harry";
+    let index5 = text5.startsWith("Hello");
+    console.log(index5);
+
+    let text7 = "Hello Nicky How Are You";
+    let index7 = text7.startsWith("Nicky");
+    console.log(index7);
+
+    // ends with method()
+
+    let text6 = "Prince is humble man";
+    let index6 = text6.endsWith("man");
+    console.log(index6);
+
+    let text8 = "Weather is Sunny";
+    let index8 = text8.endsWith("is");
+    console.log(index8);
+
+    let text10 = "Hello World";
+    //012345678910
+    //returns true
+    let index10 = text10.startsWith("World", 6);
+    console.log(index10);
+    // return false
+    let index11 = text10.startsWith("Hello", 5);
+    console.log(index11);
+
+    // ends with method with index value in parameters
+
+    let text12 = "bike is so fast and amazing";
+    let index12 = text12.endsWith("is", 7);
+    console.log(index12);
+
+    //ends with with index value
+
+    let text13 = "Hello World";
+    //012345678910
+    let index13 = text13.endsWith("Hello", 4);
+    console.log(index13);
+  </script>
+</html>
