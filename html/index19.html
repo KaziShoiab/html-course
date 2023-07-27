@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javascript 19</title>
+  </head>
+  <body></body>
+  <script>
+    let a = 20; // number store
+    let b = "20"; // string store
+    console.log(a + b);
+    let c = 10;
+    let d = 20;
+    let e = "this sum of a and b is " + c + d;
+    console.log(e);
+    let f = c + d;
+    console.log(f);
+
+    let rollno = 26; // storing it as a number;
+    // but my requirement is to convert this number into string
+    console.log(typeof rollno); // number
+
+    let name = "Harry";
+    console.log(typeof name);
+
+    let rollstring = rollno.toString();
+    console.log(rollstring);
+    console.log(typeof rollstring); // string
+
+    let hallticket = 101028;
+    console.log(typeof hallticket);
+
+    let hallstring = hallticket.toString();
+    console.log(hallstring);
+    console.log(typeof hallstring);
+
+    let expo = 956.66;
+    let expo1 = expo.toExponential();
+    console.log(expo1);
+
+    let fixnumber = 9.999; //10
+    let fixnumber1 = fixnumber.toFixed();
+    console.log(fixnumber1);
+
+    let secnumber = 3.5; //4
+    let secnumber1 = secnumber.toFixed();
+    console.log(secnumber1);
+
+    let precised = 9.656;
+    let precised1 = precised.toPrecision(8);
+    console.log(precised1);
+    console.log(typeof precised1);
+
+    let value = 123;
+    let value1 = value.valueOf(); // primary data type
+    console.log(value1);
+
+    // true 1
+    // false 0
+    // binary number = true = 1 , false = 0
+    let number1 = true;
+    console.log(number1);
+    console.log(typeof number1);
+    let word = "hello world";
+    let fruits = ["apple", "banana", "mango"]; // collection of fruits
+    console.log(fruits);
+    console.log(typeof fruits); // object
+    let valuepairs = [2, 3, 4, 5, 6]; // collection of numbers
+    console.log(valuepairs);
+    console.log(typeof valuepairs); //object
+    
+  </script>
+</html>
