@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javascript 20</title>
+  </head>
+  <body>
+    <h1 id="demo"></h1>
+    <h1 id="demo1"></h1>
+  </body>
+  <script>
+    // array methods
+    // array length
+    let cars = ["lamborghini", "mercedes", "BMW", "Audi"];
+    let index = (document.getElementById("demo").innerHTML = cars.length);
+    console.log(cars.length);
+
+    // string methods tostring()
+    let num = 3; // number into string
+    let index1 = toString(num);
+    console.log(typeof index1);
+    // array tostring() = array into string
+    let brands = ["amazon", "flipkart", "lenskart"];
+
+    console.log(brands);
+    console.log(typeof brands);
+    let index2 = brands.toString();
+    console.log(index2);
+    console.log(typeof index2);
+
+    // concat string
+    let a = "hello";
+    let b = "world";
+    let c = a + "*" + b;
+    console.log(c);
+
+    // array join() it is similar to tostring() of array
+    let fruits = ["mango", "banana", "orange"];
+    console.log(fruits);
+    let index3 = fruits.join("3");
+    console.log(index3);
+
+    // popping means out = remove
+    // pushing mean in = add
+
+    let bikes = ["yamaha", "suzuki", "Jupiter", "KTM"];
+    console.log(bikes);
+    let index4 = bikes.pop();
+    console.log(index4);
+    console.log(bikes);
+
+    let skills = ["programming", "coding", "communication"];
+    console.log(skills);
+    let index5 = skills.push("Reading");
+    console.log(skills);
+  </script>
+</html>
