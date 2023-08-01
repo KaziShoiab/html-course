@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javascript 21</title>
+  </head>
+  <body>
+    <h1 id="demo"></h1>
+    <h1 id="demo1"></h1>
+  </body>
+  <script>
+    //pop - last element remove
+    // push - add element in the array
+    // shift() - remove first element from the array
+
+    let fruits = ["mango", "banana", "orange", "kiwi"];
+    let index = fruits.shift();
+    console.log(index);
+    console.log(fruits);
+
+    let cars = ["mercedes", "bmw", "audi"];
+    let index1 = (document.getElementById("demo").innerHTML = cars.shift());
+    let index2 = (document.getElementById("demo1").innerHTML = cars);
+
+    // push method (adding the elements at the last position)
+    let colors = ["black", "blue", "green"];
+    let index3 = colors.push("violet");
+    console.log(colors);
+
+    // unshift method (add the element at the start position)
+    let weather = ["sunny", "cold", "hot"];
+    let index4 = weather.unshift("Rainy");
+    console.log(weather);
+
+    // pop = shift = remove = pop/last element = shift/firstlement
+    // push = unshift = add/at last postion = unshift/ first position
+
+    let bike = ["yamaha", "suzuki", "honda", "r15"];
+    delete bike[0];
+    console.log(bike);
+
+    let vegetables = ["tomato", "potato", "cabbage", "ladysfinger"];
+    delete vegetables[1];
+    console.log(vegetables);
+
+    let girls = ["ayesha", "Heena", "Aliya"];
+    let boys = ["Ali", "Zubair", "Farooq"];
+    let index5 = girls.concat(boys);
+    console.log(index5);
+
+    let veg = ["tomato"];
+    let fru = ["Banana"];
+
+    let index7 = fru.concat(veg);
+    console.log(index7);
+
+    let index6 = veg.concat(fru);
+    console.log(index6);
+
+    let books = ["Brilliant", "Trust", "Dreams"];
+    let index8 = books.splice(0, 3, "Better", "Future");
+    console.log(books);
+
+    let brands = ["amazon", "flipkart", "microsoft"];
+    let index9 = brands.splice(1, 0, "Google");
+    console.log(brands);
+
+    let design = ["good", "awesome", "average", "perfect"];
+    let index10 = design.slice(3);
+    console.log(index10);
+  </script>
+</html>
