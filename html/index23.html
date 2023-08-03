@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javascript 23</title>
+  </head>
+  <body>
+    <h1 id="demo"></h1>
+    <button type="button" onclick="alpha()">Alpha</button>
+    <button type="button" onclick="numeric()">Numeric</button>
+
+    <h2 id="demo1"></h2>
+    <button type="button" onclick="changenum()">random</button>
+
+    <h3 id="demo2"></h3>
+    <h3 id="demo3"></h3>
+    <h3 id="demo4"></h3>
+  </body>
+  <script>
+    // sorting alphabetically and numerically
+    let numbers = [10, 1, 50, 45, 100, 120, 2];
+    document.getElementById("demo").innerHTML = numbers;
+
+    function alpha() {
+      numbers.sort();
+      document.getElementById("demo").innerHTML = numbers;
+    }
+    function numeric() {
+      numbers.sort(function (a, b) {
+        return a - b;
+      });
+      document.getElementById("demo").innerHTML = numbers;
+    }
+
+    // math.random() //ludo , betting, dice
+
+    let unique = [10, 20, 30, 40, 50, 60, 70];
+    document.getElementById("demo1").innerHTML = unique;
+
+    function changenum() {
+      unique.sort(function () {
+        return 0.5 - Math.random();
+      });
+      document.getElementById("demo1").innerHTML = unique;
+    }
+
+    // extracting lowest value from the array
+    let num1 = [10, 20, 1, 3, 5, 100];
+    document.getElementById("demo2").innerHTML = num1;
+
+    let index1 = num1.sort(function (a, b) {
+      return a - b;
+    });
+    document.getElementById("demo3").innerHTML = index1[0];
+
+    // extracting highest value
+
+    let index2 = num1.sort(function (a, b) {
+      return b - a;
+    });
+
+    document.getElementById("demo4").innerHTML = index2[0];
+  </script>
+</html>
