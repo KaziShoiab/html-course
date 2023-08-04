@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JAVASCRIPT 24</title>
+  </head>
+  <body>
+    <h1 id="demo"></h1>
+    <h1 id="demo1"></h1>
+    <h1 id="demo2"></h1>
+    <h1 id="demo3"></h1>
+    <h1 id="demo4"></h1>
+  </body>
+  <script>
+    //Math.max.apply
+    let num = [100, 20, 32, 120, 472, 1];
+    document.getElementById("demo").innerHTML = num;
+    document.getElementById("demo1").innerHTML = highest(num);
+    function highest(app) {
+      return Math.max.apply(null, app);
+    }
+
+    // Math.min.apply
+    let num1 = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1];
+    document.getElementById("demo2").innerHTML = num1;
+    document.getElementById("demo3").innerHTML = lowest(num1);
+
+    function lowest(qrr) {
+      return Math.min.apply(null, qrr);
+    }
+
+    // sorting of objects
+    let cars = [
+      { type: "volvo", year: 2001 },
+      { type: "Bugatti", year: 2010 },
+      { type: "Mercedes", year: 2003 },
+      { type: "Audi", year: 2015 },
+    ];
+
+    cars.sort(function (a, b) {
+      return a.year - b.year;
+    });
+    showCars();
+
+    function showCars() {
+      document.getElementById("demo4").innerHTML =
+        cars[0].type +
+        " " +
+        cars[0].year +
+        "<br>" +
+        cars[1].type +
+        " " +
+        cars[1].year +
+        "<br>" +
+        cars[2].type +
+        " " +
+        cars[2].year +
+        "<br>" +
+        cars[3].type +
+        " " +
+        cars[3].year;
+    }
+    showCars();
+  </script>
+</html>
