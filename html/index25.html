@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javascript 25</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <br /><br />
+
+    <h1 id="numfunq"></h1>
+    <h1 id="numfun"></h1>
+
+    <br /><br />
+
+    <h1 id="addfun"></h1>
+    <h1 id="addfun1"></h1>
+    <br /><br />
+
+    <h1 id="subfun"></h1>
+    <h1 id="subfun1"></h1>
+  </body>
+  <script>
+    //iteration method ; value, index, array{object}
+    let numbers = [20, 49, 52, 11, 101];
+
+    let txt = " ";
+    numbers.forEach(myFunction);
+    document.getElementById("demo").innerHTML = txt;
+
+    function myFunction(value, index, array) {
+      txt += value + "<br>";
+    }
+
+    console.log(numbers);
+
+    // map method
+
+    let names = ["John", "Mike", "Harry"];
+    let names1 = names.map(myfunction2);
+    document.getElementById("demo1").innerHTML = names1;
+
+    function myfunction2(value, index, array) {
+      return "Good Morning" + " " + value;
+    }
+
+    // map method with numbers *
+
+    let num1 = [2, 4, 6, 8, 10];
+    document.getElementById("numfunq").innerHTML = num1;
+    let num2 = num1.map(numfun);
+    document.getElementById("numfun").innerHTML = num2;
+
+    function numfun(value, index, array) {
+      return value * 2;
+    }
+
+    // map method with numbers +
+    let add1 = [1, 2, 3, 4, 5];
+    document.getElementById("addfun").innerHTML = add1;
+    let add2 = add1.map(addfun);
+    document.getElementById("addfun1").innerHTML = add2;
+    function addfun(value, index, array) {
+      return value + 1;
+    }
+
+    // map method with numbers -
+
+    let sub1 = [10, 9, 7, 6, 5];
+    document.getElementById("subfun").innerHTML = sub1;
+    let sub2 = sub1.map(subfun);
+    document.getElementById("subfun1").innerHTML = sub2;
+
+    function subfun(value, index, array) {
+      return value - 1;
+    }
+
+ 
+  </script>
+</html>
