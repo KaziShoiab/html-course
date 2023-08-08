@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javascript 26</title>
+  </head>
+  <style>
+    div {
+      color: white;
+    }
+  </style>
+  <body>
+    <div class="first" style="background-color: blue">
+      <h2>flatmap</h2>
+      <h1 id="demo1"></h1>
+
+      <h1 id="demo"></h1>
+    </div>
+    <div class="second" style="background-color: black">
+      <h1 id="myadd"></h1>
+      <h1 id="myadd1"></h1>
+    </div>
+    <div class="three" style="background-color: red">
+      filtering
+
+      <h1 id="number"></h1>
+      <h1 id="number1"></h1>
+    </div>
+    <div class="four" style="background-color: maroon">
+      <h1 id="number2"></h1>
+      <h1 id="number22"></h1>
+    </div>
+  </body>
+  <script>
+    //flatmap()= it flat the array
+    // single dimensional array = each element = [1,2,3] * 2 = 2 4 6
+    // multidimensional arr = [[1,2,3], [3,4,5]] = each element = [1,2,3,4,5], 123456
+
+    let myarray = [1, 2, 3, 4, 5];
+    document.getElementById("demo1").innerHTML = "Question" + " " + myarray;
+    let myarray1 = myarray.flatMap((x) => x * 2);
+    document.getElementById("demo").innerHTML = "Answer" + " " + myarray1;
+
+    //flatmap() +
+    let myadd = [10, 20, 30, 40, 50];
+    document.getElementById("myadd").innerHTML = "Question" + " " + myadd;
+    let myadd1 = myadd.flatMap((y) => y + 1);
+    document.getElementById("myadd1").innerHTML = "Answer" + " " + myadd1;
+
+    //filter()
+
+    let number = [5, 20, 30, 100, 200];
+    document.getElementById("number").innerHTML =
+      "Extract Even Numbers" + " " + number;
+    let number1 = number.filter((value, index, array) => value % 2 === 0);
+    document.getElementById("number1").innerHTML =
+      "Even Numbers" + " " + number1;
+
+    let number2 = [5, 20, 30, 100, 200];
+    document.getElementById("number2").innerHTML =
+      "Extract Even Numbers" + " " + number2;
+    let number22 = number.filter((value, index, array) => value % 2 === 1);
+    document.getElementById("number22").innerHTML =
+      "Even Numbers" + " " + number22;
+
+    //filter 1
+
+    const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+    const evenNumbers = numbers.filter(function (number) {
+      return number % 2 === 0;
+    });
+
+    console.log(evenNumbers); // Output: [2, 4, 6, 8, 10]
+
+    //filter 2
+    const names = ["Alice", "Bob", "Charlie", "David", "Eve"];
+
+    const longNames = names.filter(function (name) {
+      return name.length > 4;
+    });
+
+    console.log(longNames); // Output: ["Charlie", "David"]
+
+    //filter 3
+    const people = [
+      { name: "Alice", age: 25 },
+      { name: "Bob", age: 30 },
+      { name: "Charlie", age: 22 },
+      { name: "David", age: 28 },
+      { name: "Eve", age: 35 },
+    ];
+
+    const youngPeople = people.filter(function (person) {
+      return person.age < 30;
+    });
+
+    console.log(youngPeople);
+    /* Output:
+[
+  { name: "Alice", age: 25 },
+  { name: "Charlie", age: 22 },
+  { name: "David", age: 28 }
+]
+*/
+
+    //filter 4
+    const values = [10, 20, 30, 10, 40, 20, 50];
+
+    const uniqueValues = values.filter(function (value, index, self) {
+      return self.indexOf(value) === index;
+    });
+
+    console.log(uniqueValues); // Output: [10, 20, 30, 40, 50]
+  </script>
+</html>
