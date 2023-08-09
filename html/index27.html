@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javascript 27</title>
+  </head>
+  <h1 id="demo"></h1>
+  <h1 id="demo1"></h1>
+  <h1 id="demo3"></h1>
+  <h1 id="demo4"></h1>
+  <h1 id="demo5"></h1>
+  <h1 id="demo6"></h1>
+  <h1 id="demo7"></h1>
+  <h1 id="demo8"></h1>
+  <h1 id="demo9"></h1>
+  <h1 id="demo10"></h1>
+
+  <body></body>
+  <script>
+    let names = ["Alice", "Bob", "Charlie", "David", "Eve"];
+    document.getElementById("demo").innerHTML = "question" + " " + names;
+    let names1 = names.filter(function (name) {
+      return name.length > 4;
+    });
+    document.getElementById("demo1").innerHTML = "answer" + " " + names1;
+
+    //reduce method
+    let num = [2, 4, 6, 8, 10]; //30
+    document.getElementById("demo3").innerHTML = num;
+    let num1 = num.reduce(myFunction);
+    document.getElementById("demo4").innerHTML = num1;
+
+    function myFunction(sum, val, index, array) {
+      return sum + val;
+    }
+    // reduce
+    let num3 = [2, 2, 2, 2, 2]; // left to right
+    let num4 = num3.reduce(myFunction2);
+    function myFunction2(accum, currval) {
+      return accum + currval;
+    }
+    document.getElementById("demo5").innerHTML = num4;
+
+    //reduce right
+    let num5 = [2, 2, 2, 2, 2]; // right to left
+    let num6 = num5.reduceRight(myFunction2);
+    function myFunction2(accum, currval) {
+      return accum + currval;
+    }
+    document.getElementById("demo6").innerHTML = num6;
+
+    // every method
+
+    let num7 = [2, 4, 6, 8, 10];
+    document.getElementById("demo7").innerHTML =
+      "check if it is even no." + " : " + num7;
+
+    let num8 = num7.every(myFunction3);
+    document.getElementById("demo8").innerHTML =
+      "Yes This is even number" + ": " + num8;
+
+    function myFunction3(value) {
+      return value % 2 === 0;
+    }
+
+    //odd
+    let num9 = [3, 15, 21, 9];
+    document.getElementById("demo9").innerHTML =
+      "check if it is even no." + " : " + num9;
+
+    let num10 = num9.every(myFunction3);
+    document.getElementById("demo10").innerHTML =
+      "Yes This is Odd number" + ": " + num10;
+
+    function myFunction3(value) {
+      return value % 3 === 0;
+    }
+  </script>
+</html>
