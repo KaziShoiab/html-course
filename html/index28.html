@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javascript 28</title>
+  </head>
+  <body>
+    <h1 id="demo"></h1>
+    <h1 id="demo1"></h1>
+    <h1 id="demo2"></h1>
+    <h1 id="demo3"></h1>
+    <h1 id="demo4"></h1>
+  </body>
+  <script>
+    //SOME METHOD
+    let num = [2, 4, 6, 8, 10, 11];
+    let num1 = num.some(myfunction);
+    document.getElementById("demo").innerHTML = num1;
+
+    function myfunction(value) {
+      return value % 2 === 0;
+    }
+
+    // indexOf() method in array
+
+    let fruits = ["apple", "banana", "orange", "papaya"];
+    let index = fruits.indexOf("papaya");
+    document.getElementById("demo1").innerHTML = index;
+
+    // indexOf() method in string
+    let name = "John doe";
+    let index1 = name.indexOf("h");
+    document.getElementById("demo2").innerHTML = index1;
+
+    //find method
+
+    let even = [2, 4, 6, 10, 8];
+    let index2 = even.find(even1);
+    document.getElementById("demo3").innerHTML = index2;
+
+    function even1(value) {
+      return value > 6;
+    }
+
+    let vegetables = ["tomato", "potato"];
+    let index3 = vegetables.findIndex(veggy);
+    document.getElementById("demo4").innerHTML = index3;
+    function veggy(value) {
+      return value == "potato";
+    }
+  </script>
+</html>
