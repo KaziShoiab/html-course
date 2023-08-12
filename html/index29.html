@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javascript 29</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+  </body>
+  <script>
+    //array.from
+    let myarray = Array.from("ABCDEFG");
+    let index = (document.getElementById("demo").innerHTML = myarray);
+    console.log(typeof index);
+
+    //keys()
+
+    let fruits = ["apple", "mango", "banana", "orange", "kiwi"];
+    let index1 = fruits.keys();
+
+    //for loop
+    let text = " ";
+    for (let x of index1) {
+      text += x + "<br>";
+    }
+
+    document.getElementById("demo1").innerHTML = text;
+
+    // entries ( ) output = key + value
+
+    let veg = ["tomato", "potato", "carrot", "brinjal"];
+    let index2 = veg.entries();
+
+    for (let y of index2) {
+      document.getElementById("demo2").innerHTML += y + "<br>";
+    }
+
+    // include //
+
+    let cars = ["mercedes", "audi", "jaguar"];
+    let index3 = (document.getElementById("demo3").innerHTML =
+      cars.includes("kia"));
+
+    // spread
+
+    let q1 = [1, 2, 3];
+    let q2 = [4, 5, 6];
+    let q3 = [7, 8, 9];
+
+    let numbers = [q1, q2, q3];
+    document.getElementById("demo4").innerHTML = numbers;
+
+    let alpha1 = ["a", "b", "c"];
+    let alpha2 = ["d"];
+
+    let alphabets = [alpha1, alpha2];
+    document.getElementById("demo5").innerHTML = alphabets;
+  </script>
+</html>
