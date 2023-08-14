@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javascript 30</title>
+  </head>
+  <body>
+    <p id="demo">Good Evening</p>
+
+    <p id="demo1">Ac is off temperature is normal</p>
+    <p id="demo2"></p>
+  </body>
+  <script>
+    //conditional statement = if statement
+    if (new Date().getHours() < 6) {
+      document.getElementById("demo").innerHTML = "Good Day";
+    }
+    let temp = 30;
+    if (temp > 40) {
+      document.getElementById("demo1").innerHTML = "AC is ON";
+    }
+
+    // conditional statement = if else
+
+    let bikeSpeed = 121;
+    if (bikeSpeed > 120) {
+      document.getElementById("demo2").innerHTML = "Danger";
+    } else {
+      document.getElementById("demo2").innerHTML = "Safe";
+    }
+  </script>
+</html>
