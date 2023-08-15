@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javascript 31</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <h1 id="demo3"></h1>
+  </body>
+  <script>
+    // before 10 = Good Morning (if)
+    // between 10 to 6 = Good Day (else if)
+    // after 6 = Good Evening (else)
+
+    let time = new Date().getHours();
+    let greetings;
+    if (time < 10) {
+      greetings = "Good Morning";
+    } else if (time < 20) {
+      greetings = "Good Day";
+    } else {
+      greetings = "Good Evening";
+    }
+    document.getElementById("demo").innerHTML = greetings;
+
+    // const age = parseInt(prompt("Enter Your Age"));
+    // if (age < 18) {
+    //   document.getElementById("demo1").innerHTML = "Your Are Minor";
+    // } else if (age >= 18 && age < 60) {
+    //   document.getElementById("demo1").innerHTML = "Your Are Adult";
+    // } else {
+    //   document.getElementById("demo1").innerHTML = "You Are Old Aged";
+    // }
+
+    let day;
+    switch (new Date().getDay()) {
+      case 0:
+        day = "sunday";
+        break;
+      case 1:
+        day = "Monday";
+        break;
+      case 2:
+        day = "Tuesday";
+        break;
+      case 3:
+        day = "Wednesday";
+        break;
+      case 4:
+        day = "Thursday";
+        break;
+      case 5:
+        day = "Friday";
+        break;
+      case 6:
+        day = "Saturday";
+        break;
+    }
+
+    document.getElementById("demo2").innerHTML = "Today is" + " " + day;
+
+    const dayOfWeek = parseInt(prompt("Enter The number for the week"));
+    switch (dayOfWeek) {
+      case 0:
+        document.getElementById("demo3").innerHTML = "Sunday";
+        break;
+      case 1:
+        document.getElementById("demo3").innerHTML = "Monday";
+        break;
+      case 2:
+        document.getElementById("demo3").innerHTML = "Tuesday";
+        break;
+      case 3:
+        document.getElementById("demo3").innerHTML = "Wednesday";
+        break;
+      case 4:
+        document.getElementById("demo3").innerHTML = "Thursday";
+        break;
+      case 5:
+        document.getElementById("demo3").innerHTML = "Friday";
+        break;
+      case 6:
+        document.getElementById("demo3").innerHTML = "Saturday";
+        break;
+      default:
+        document.getElementById("demo3").innerHTML =
+          "You have entered the wrong input";
+    }
+  </script>
+</html>
