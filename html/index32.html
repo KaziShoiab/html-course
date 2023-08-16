@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javascript 32</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+  </body>
+  <script>
+    // for loop
+    let cars = ["mercedes", "BMW", "AUDI", "JAGUAR", "SKODA", "Baleno"];
+    // ARRAY LENGTH = 5 a = 0 ; a < cars.length; a++
+    let text = " ";
+    for (let i = 0; i < cars.length; i++) {
+      text += cars[i] + "<br>";
+    }
+
+    // cars[0]
+    /// cars[1]
+    // cars[2]
+    document.getElementById("demo").innerHTML = text;
+
+    //while loop
+
+    let text1 = "";
+    let a = 0; // initialization
+    while (a < 10) {
+      text1 += "<br>" + "The Number is" + " " + a;
+      a++;
+    }
+    document.getElementById("demo1").innerHTML = text1;
+
+    // while 1st we will check condition , if condition is true block of code while be executed
+
+    // code executed if the condition is true, the executed code remains, if condition is false the executed code will be revert back
+
+    //while (condition){
+    //code execute
+    //  }
+
+    // do { // code execute}
+    // while (condition)
+
+    // do while loop
+    let number = " ";
+    let b = 0;
+    do {
+      number += "<br>" + "the number is " + " " + b;
+      b++;
+    } while (b < 10);
+
+    document.getElementById("demo2").innerHTML = number;
+
+    // conditional statements
+    // if
+    // if else
+    // else if ladder
+    // switch
+    // while loop
+    // for loop
+    // do while loop
+
+    //javASCRIPT
+    // PYTHON
+    // // JAVA
+    // DART
+    // C#
+    // ANGULAR
+    // TYPESCRIPT
+    // REACT JS
+    // C++
+
+    // WORDPRESS
+    // UI UX DESIGNING
+    
+  </script>
+</html>
